@@ -290,6 +290,7 @@ body{
 
   .hero-gif{
     width:150px;
+    display:none;
   }
 
   .work-list{
