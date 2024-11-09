@@ -72,6 +72,8 @@ body{
   padding: 24px 0px;
   gap: 32px;
   font-size: var(--fs-body-s);
+  position: sticky;
+  top:0;
 }
 
 .nav-item{
@@ -255,6 +257,7 @@ body{
     justify-content: space-between;
     padding: 16px 0px;
     gap: 8px;
+    background-color: var(--color-tertiary);
   }
 
   .hero-gif{
