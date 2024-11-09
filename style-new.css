@@ -32,6 +32,7 @@
 .title-l { font-size: var(--fs-title-l); line-height: 110%; font-weight: var(--fw-bold); }
 .title-m { font-size: var(--fs-title-m); line-height: 110%; font-weight: var(--fw-bold); }
 
+.body-xl { font-size: var(--fs-title-l) }
 .body-l { font-size: var(--fs-body-l) }
 .body-m { font-size: var(--fs-body-m) }
 .body-s { font-size: var(--fs-body-s) }
@@ -278,6 +279,7 @@ body{
     flex-direction: column;
     justify-content:flex-start;
     padding-bottom: 80px;
+    padding-top: 40px;
     align-items: flex-end;
     gap: 80px;
   }
@@ -314,7 +316,7 @@ body{
     border-radius: 16px;
   }
 
-  .work-item:nth-child(odd){
+  .work-item:nth-child(even){
      flex-direction: column;
   }
 
