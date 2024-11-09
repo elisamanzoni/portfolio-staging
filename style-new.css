@@ -257,7 +257,6 @@ body{
     justify-content: space-between;
     padding: 16px 0px;
     gap: 8px;
-    background-color: var(--color-tertiary);
   }
 
   .hero-gif{
