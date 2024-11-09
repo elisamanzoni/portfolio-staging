@@ -13,13 +13,14 @@
   --fs-title-l: 40px;
   --fs-title-m: 32px;
 
+  --fs-body-xl: 40px;
   --fs-body-l: 32px;
   --fs-body-m: 28px;
   --fs-body-s: 20px;
 
   --fs-label: 16px;
 
-  --fw-bold: 550;
+  --fw-bold: 600;
 }
 
 
@@ -32,7 +33,7 @@
 .title-l { font-size: var(--fs-title-l); line-height: 110%; font-weight: var(--fw-bold); }
 .title-m { font-size: var(--fs-title-m); line-height: 110%; font-weight: var(--fw-bold); }
 
-.body-xl { font-size: var(--fs-title-l) }
+.body-xl { font-size: var(--fs-body-xl) }
 .body-l { font-size: var(--fs-body-l) }
 .body-m { font-size: var(--fs-body-m) }
 .body-s { font-size: var(--fs-body-s) }
@@ -116,7 +117,7 @@ body{
 .hero-text{
   width:100%;
   display: flex;
-  max-width: 800px;
+  max-width: 850px;
   flex-direction: column;
   gap: 40px;
 }
@@ -205,7 +206,6 @@ body{
 }
 
 .button{
-  padding: 12px 24px;
   background-color: var(--color-primary);
   border-radius: 50px;
   border: 0px solid black;
@@ -220,7 +220,7 @@ body{
 
 .button.sm{
   font-size: var(--fs-label);
-  font-weight: var(--fw-bold);
+    padding: 12px 24px;
 }
 
 
@@ -237,8 +237,9 @@ body{
     --fs-title-l: 32px;
     --fs-title-m: 32px;
 
-    --fs-body-l: 22px;
-    --fs-body-m: 22px;
+    --fs-body-xl: 24px;
+    --fs-body-l: 20px;
+    --fs-body-m: 20px;
     --fs-body-s: 18px;
 
     --fs-label: 16px;
@@ -294,7 +295,7 @@ body{
   }
 
   .work-list{
-    gap: 80px;
+    gap: 100px;
   }
 
   .work-item{
