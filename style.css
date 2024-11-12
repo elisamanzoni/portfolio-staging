@@ -35,17 +35,32 @@
 
 .body-xl { font-size: var(--fs-body-xl) }
 .body-l { font-size: var(--fs-body-l) }
-.body-m { font-size: var(--fs-body-m) }
-.body-s { font-size: var(--fs-body-s) }
+.body-m { font-size: var(--fs-body-m); line-height:140%; font-weight: 300;}
+.body-s { font-size: var(--fs-body-s); line-height:140%; font-weight: 300;}
 
 .label { font-size: var(--fs-label); font-weight: normal;}
+
+.body-m > span{
+  margin-top: 16px;
+  display: block;
+}
+
+.body-s > span{
+  margin-top: 12px;
+  display: block;
+}
+
+b {font-weight: var(--fw-bold)}
 
 h1 { margin:0px}
 h2 { margin:0px}
 h3 { margin:0px}
 p { margin:0px}
+ul { margin:0px}
+li {margin-top: 12px;}
 a {color: var(--color-primary);}
 a:hover {color: var(--color-brand); transition: 0.2s}
+
 
 .underline{text-decoration: underline;}
 .uppercase{text-transform: uppercase;}
@@ -79,6 +94,7 @@ body{
 .nav-item{
   padding-bottom: 4px;
   color: var(--color-secondary);
+  text-decoration: none;
 }
 
 .nav-item:hover{
@@ -204,26 +220,50 @@ body{
 }
 
 .work-footer{
-  padding-top:16px
+  padding-top:16px;
+  display: flex;
 }
 
 .button{
   background-color: var(--color-primary);
   border-radius: 50px;
   border: 0px solid black;
-    color: var(--color-white);
+  color: var(--color-white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
 }
 
 .button:hover{
   background-color: var(--color-brand);
   transition: 0.3s;
-      color: var(--color-primary);
+  color: var(--color-primary);
+  gap: 32px
 }
 
 .button.sm{
   font-size: var(--fs-label);
     padding: 12px 24px;
 }
+
+.button.m{
+  font-size: var(--fs-body-s);
+  padding:  20px 32px 20px 32px;
+
+}
+
+.button path{
+  fill:white
+}
+
+.button:hover path{
+  fill:var(--color-primary);
+  transition: 0.3s;
+}
+
+
 
 
 
@@ -234,10 +274,10 @@ body{
 
   :root {
     --fs-display-l: 40px;
-    --fs-display-sm: 50px;
+    --fs-display-s: 40px;
 
     --fs-title-l: 32px;
-    --fs-title-m: 32px;
+    --fs-title-m: 28px;
 
     --fs-body-xl: 24px;
     --fs-body-l: 20px;
