@@ -39,7 +39,7 @@
   height: 70vh;
   overflow: hidden;
   border-radius: 16px;
-    border: 2px solid #ECEFF4;
+  border: 2px solid #ECEFF4;
 }
 
 .article-video-container.amazon{
@@ -47,7 +47,7 @@
 }
 
 .article-video-container.easydream{
-  width:124vh;
+  width:124.5vh;
 }
 
 .article-video{
@@ -75,6 +75,40 @@
   gap: 16px;
 }
 
+/* TABLET ------------------------------------------------- */
+
+@media (max-width: 1024px) {
+
+  .article-image.medium{
+    height: auto;
+  }
+
+  .article-video-container{
+    width:calc(100vw - 48px);
+    height: calc( 65vw - 48px);
+    overflow: hidden;
+    border-radius: 0px;
+    border: 0px solid #ECEFF4;
+  }
+
+  .article-video-container.amazon{
+    width:calc(100vw - 48px);
+    height: calc( 71.4vw);
+  }
+
+  .article-video-container.easydream{
+    width:calc(100vw - 48px);
+    height: calc( 56vw);
+  }
+
+  .article-video{
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  
+}
+
 /* MOBILE ------------------------------------------------- */
 
 @media (max-width: 425px) {
@@ -87,24 +121,11 @@
     height: calc(100vw - 48px);
   }
 
-  .article-image.medium{
-    height: auto;
-  }
 
-  .article-video-container.easydream{
-    height: auto;
-  }
 
-  .article-video-container{
-    width:calc(100vw - 48px);
-    height: calc( 65vw - 48px);
-    overflow: hidden;
-  }
 
-  .article-video{
-    border-radius: 0px;
-    overflow: hidden;
-  }
+
+
 
 
 
