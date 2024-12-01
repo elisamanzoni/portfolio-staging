@@ -42,6 +42,14 @@
     border: 2px solid #ECEFF4;
 }
 
+.article-video-container.amazon{
+  width:98vh;
+}
+
+.article-video-container.easydream{
+  width:124vh;
+}
+
 .article-video{
   width:100%;
   height: 100%;
@@ -80,6 +88,10 @@
   }
 
   .article-image.medium{
+    height: auto;
+  }
+
+  .article-video-container.easydream{
     height: auto;
   }
 
